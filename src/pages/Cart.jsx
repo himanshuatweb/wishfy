@@ -24,20 +24,10 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const updateItem = (incDec, item) => {
-    let cloneObj = { ...item };
-    if (incDec === 'inc') {
-      cloneObj = {
-        ...cloneObj,
-        qty: cloneObj.qty + 1,
-      };
-      return cloneObj;
-    } else {
-      cloneObj = {
-        ...cloneObj,
-        qty: cloneObj.qty > 1 ? cloneObj.qty - 1 : cloneObj.qty,
-      };
-      return cloneObj;
-    }
+    const cloneObj = { ...item };
+    const qtyChange = incDec === 'inc' ? 1 : -1;
+    cloneObj.qty = Math.max(1, cloneObj.qty + qtyChange);
+    return cloneObj;
   };
 
   if (cart.length <= 0) {
