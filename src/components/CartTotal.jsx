@@ -39,7 +39,10 @@ const CartTotal = () => {
         {cart.length > 0 &&
           cart.map((item) => {
             return (
-              <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+              <List
+                key={item.id}
+                sx={{ width: '100%', bgcolor: 'background.paper' }}
+              >
                 <ListItem alignItems='flex-start'>
                   <ListItemAvatar>
                     <Avatar alt={item.name} src={item.image} />

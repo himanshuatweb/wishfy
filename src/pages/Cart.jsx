@@ -69,7 +69,7 @@ const Cart = () => {
             ? cart.map((item) => {
                 return (
                   <Grid item xs={12} key={item?.id} mb={2}>
-                    <Card sx={{ minWidth: '350px' }}>
+                    <Card sx={{ minWidth: '320px' }}>
                       <Box
                         sx={{
                           display: 'flex',
