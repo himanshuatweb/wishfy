@@ -42,8 +42,6 @@ const Product = () => {
     }
   }, [isLoading]);
 
-  console.log('product ', product);
-
   const checkIfAlreadyPresent = (product) => {
     let present = false;
     cart.forEach((cartItem) => {

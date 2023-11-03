@@ -17,8 +17,6 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const { cart } = useSelector((state) => state.cart);
 
-  //   console.log('cart ', cart);
-
   const checkIfAlreadyPresent = (product) => {
     let present = false;
     cart.forEach((cartItem) => {

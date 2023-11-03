@@ -22,7 +22,7 @@ const EmptyCart = () => {
       >
         <img src={EmptyCartImg} style={{ width: '100%' }} />
       </Box>
-      <Typography variant='h6'>
+      <Typography variant='h6' textAlign='center'>
         Add something to give your cart it's meaning...
       </Typography>
     </Box>

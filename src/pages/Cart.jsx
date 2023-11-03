@@ -78,7 +78,7 @@ const Cart = () => {
                       >
                         <CardMedia
                           image={item?.image}
-                          sx={{ height: 200, minWidth: 150 }}
+                          sx={{ height: 250, minWidth: 150 }}
                         />
 
                         <Box p={3}>

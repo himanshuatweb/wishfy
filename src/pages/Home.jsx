@@ -40,7 +40,6 @@ const Home = ({ search }) => {
     return <Loading />;
   }
 
-  console.log('allProudcts ', allProducts);
 
   return (
     <Grid container mt={'80px'} px={3} spacing={4} mb={5}>
